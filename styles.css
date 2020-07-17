@@ -5,6 +5,66 @@
   box-sizing: border-box;
 }
 
+html, body {
+  background: rgb(74,11,11);
+  background: linear-gradient(180deg, rgba(74,11,11,1) 0%, rgba(199,11,11,1) 49%, rgba(255,0,0,1) 100%);
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet; 
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 button {
   cursor: pointer;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+/* Page styles */
+.main-container {
+  height: 100%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.main-header {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header .logo {
+  width: 70px;
+  height: 70px;
+}
+
+.main-header .list-options {
+  color: #fff;
+  font-size: 18px;
+}
+
+.list-options .option {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.option a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 32px;
+  border: 2px solid transparent;
+}
+
+.option a:hover {
+  border-color: #fff;
 }
