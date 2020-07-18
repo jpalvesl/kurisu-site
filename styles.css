@@ -8,9 +8,10 @@
 html, body {
   background: rgb(74,11,11);
   background: linear-gradient(180deg, rgba(74,11,11,1) 0%, rgba(199,11,11,1) 49%, rgba(255,0,0,1) 100%);
+  font-family: 'Ubuntu', sans-serif;
+  color: #fff;
   width: 100vw;
   height: 100vh;
-  background-color: blueviolet; 
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -28,11 +29,17 @@ ul, ol {
   list-style-type: none;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* Page styles */
 .main-container {
   height: 100%;
-  max-width: 1024px;
+  max-width: 1100px;
   margin: auto;
+  padding: 0 36px;
 }
 
 .main-header {
@@ -48,7 +55,6 @@ ul, ol {
 }
 
 .main-header .list-options {
-  color: #fff;
   font-size: 18px;
 }
 
@@ -58,8 +64,6 @@ ul, ol {
 }
 
 .option a {
-  color: inherit;
-  text-decoration: none;
   padding: 10px;
   border-radius: 32px;
   border: 2px solid transparent;
@@ -67,4 +71,62 @@ ul, ol {
 
 .option a:hover {
   border-color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.playdiscord {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 55px;
+}
+
+.playdiscord > div {
+}
+
+.play-discord img {
+  width: 100%;
+}
+
+.playdiscord > div h1 {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.playdiscord > div h2 {
+  margin-bottom: 16px;
+}
+
+.playdiscord > div p {
+  margin-bottom: 16px;
+}
+
+.playdiscord > div p span {
+  color: pink;
+}
+
+.join-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4ae34;
+  color: initial;
+  font-size: 20px;
+  font-weight: 700;
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  margin-top: 8px;
+  padding: 15px;
+  border-radius: 32px;
+  border: none;
+  transition: background-color 200ms ease-out;
+}
+
+.join-button:hover {
+  background-color: #facf30;
 }
