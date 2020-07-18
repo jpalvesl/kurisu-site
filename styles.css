@@ -1,4 +1,9 @@
 /* Global styles */
+@font-face {
+  font-family: Garamonb;
+  src: url(./fonts/Garamonb.ttf)
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +19,6 @@ body {
   background-repeat: no-repeat;
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
-  width: 100vw;
-  height: 100vh;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -60,9 +63,18 @@ section h1 {
   justify-content: space-between;
 }
 
+.main-header a {
+  display: flex;
+  align-items: center;
+}
+
+.main-header a span {
+  font-family: 'Garamonb', sans-cursive;
+  font-size: 30px;
+}
+
 .main-header .logo {
   width: 70px;
-  height: 70px;
 }
 
 .main-header .list-options {
@@ -172,5 +184,70 @@ section h1 {
 .advantage p em {
   color: darkorchid;
   font-weight: bold;
+}
+
+/* Command types styles */
+#tipos-de-comandos {
+  margin-top: 100px;
+}
+
+#tipos-de-comandos .kurisu-gif {
+  width: 370px;
+}
+
+#tipos-de-comandos h1 span {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#tipos-de-comandos > h2 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: 500;
+}
+
+#tipos-de-comandos .content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+#tipos-de-comandos .content > div {
+  width: 100%;
+}
+
+#tipos-de-comandos .content > div h2 {
+  margin-bottom: 8px;
+}
+
+#tipos-de-comandos .content > div {
+  max-width: 600px;
+}
+
+#tipos-de-comandos .content > div .box {
+  padding: 25px 45px;
+  margin-bottom: 30px;
+  border: 1px solid #f4f5f6;
+  border-radius: 8px;
+}
+
+.content h2  span {
+  color: #cecece;
+  font-weight: 400;
+}
+
+div > .box span {
+  display: block;
+  font-size: 18px;
+}
+div > .box span:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+div > .box strong {
+  display: inline-block;
+  width: 125px;
 }
 
