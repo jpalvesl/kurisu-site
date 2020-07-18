@@ -5,9 +5,13 @@
   box-sizing: border-box;
 }
 
-html, body {
-  background: rgb(74,11,11);
+html {
+  background-color: rgba(255,0,0,1);
+}
+
+body {
   background: linear-gradient(180deg, rgba(74,11,11,1) 0%, rgba(199,11,11,1) 49%, rgba(255,0,0,1) 100%);
+  background-repeat: no-repeat;
   font-family: 'Ubuntu', sans-serif;
   color: #fff;
   width: 100vw;
@@ -129,4 +133,25 @@ a {
 
 .join-button:hover {
   background-color: #facf30;
+}
+
+#vantagens {
+  margin-top: 20px;
+}
+
+#vantagens h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.list-advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-advantages .advantage {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
 }
