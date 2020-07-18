@@ -251,3 +251,48 @@ div > .box strong {
   width: 125px;
 }
 
+/* Footer styles */
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #000;
+}
+
+.c-falado {
+  width: 50px;
+  margin-right: 16px;
+}
+
+footer a {
+  background-color: #000;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+footer a ion-icon,
+footer a svg {
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  fill: #fff;
+}
+
+.separator {
+  display: block;
+  width: 2px;
+  background-color: #000;
+  height: 40px;
+  margin: auto;
+}
+
+.user-icon {
+  width: 50px;
+  margin-right: 16px;
+}
