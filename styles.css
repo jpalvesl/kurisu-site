@@ -38,6 +38,12 @@ a {
   text-decoration: none;
 }
 
+section h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
 /* Page styles */
 .main-container {
   height: 100%;
@@ -46,6 +52,7 @@ a {
   padding: 0 36px;
 }
 
+/* Header styles */
 .main-header {
   height: 120px;
   display: flex;
@@ -77,16 +84,19 @@ a {
   border-color: #fff;
 }
 
+/* Content styles */
 .content {
   display: flex;
   flex-direction: column;
 }
 
+/* Presentation styles */
 .playdiscord {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 55px;
+  margin-bottom: 20px;
 }
 
 .playdiscord > div {
@@ -98,14 +108,9 @@ a {
 
 .playdiscord > div h1 {
   margin-bottom: 8px;
-  text-align: center;
 }
 
 .playdiscord > div h2 {
-  margin-bottom: 16px;
-}
-
-.playdiscord > div p {
   margin-bottom: 16px;
 }
 
@@ -116,19 +121,25 @@ a {
 .join-button {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #f4ae34;
   color: initial;
   font-size: 20px;
   font-weight: 700;
   width: 300px;
   height: 60px;
-  margin: auto;
+  margin: 20px auto;
   margin-top: 8px;
   padding: 15px;
   border-radius: 32px;
   border: none;
   transition: background-color 200ms ease-out;
+}
+
+.join-button svg {
+  width: 30px;
+  height: 30px;
+  fill: inherit;
 }
 
 .join-button:hover {
@@ -139,19 +150,27 @@ a {
   margin-top: 20px;
 }
 
-#vantagens h1 {
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 8px;
-}
-
+/* Advantages styles */
 .list-advantages {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
 }
 
 .list-advantages .advantage {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
+  background-color: rgba(0,0,0, .5);
+  min-height: 100px;
+  padding: 20px;
+  border: 1px solid #f5f6f7;
+  border-radius: 8px;
 }
+
+.advantage h2 {
+  margin-bottom: 16px;
+}
+
+.advantage p em {
+  color: darkorchid;
+  font-weight: bold;
+}
+
