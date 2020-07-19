@@ -239,7 +239,7 @@ section h1 {
 }
 
 div > .box span {
-  display: block;
+  display: flex;
   font-size: 18px;
 }
 div > .box span:not(:last-child) {
@@ -247,8 +247,37 @@ div > .box span:not(:last-child) {
 }
 
 div > .box strong {
-  display: inline-block;
+  display: block;
   width: 125px;
+}
+
+/* Commands styles */
+#comandos {
+  margin-top: 100px;
+}
+
+#comandos .list-commands {
+  margin-bottom: 20px;
+}
+
+.list-commands .command {
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #000;
+}
+
+.list-commands strong {
+  display: inline-block;
+  width: 140px;
+}
+
+.list-commands .command > div > p {
+  margin-bottom: 12px;
+}
+
+.list-commands .command > div > div > p:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 /* Footer styles */
