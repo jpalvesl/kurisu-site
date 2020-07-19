@@ -2,10 +2,10 @@ const prefix = 'ks.'
 const commands = [
   {
     name: `${prefix}avatar`,
-    description: 'Retorna  os links das imagens das pessoas mencionadas',
+    description: 'Retorna  os links dos avatares das pessoas mencionadas',
     usage: [
       `${prefix}avatar - Mostra o link da pessoa usou o comando`,
-      `${prefix}avatar [@user] - Mostra os links das pessoas mencionadas`
+      `${prefix}avatar [@user] - Mostra os links dos avatares das pessoas mencionadas`
     ]
   },
   {
@@ -31,7 +31,7 @@ const commands = [
   },
   {
     name: `${prefix}ping`,
-    description: 'Comando de interação com a Kurisu',
+    description: 'Joga aquele ping pong maroto com a Kurisu',
     usage: [
       `${prefix}ping`,
     ]
@@ -87,7 +87,7 @@ const commands = [
   },
   {
     name: `${prefix}8ball`,
-    description: 'Simula o funcionamento da toda poderosa bola8',
+    description: 'Simula o funcionamento da toda poderosa BOLA OITO',
     usage: [
       `${prefix}8ball <pergunta>`,
     ]
@@ -97,12 +97,12 @@ const commands = [
     description: 'Busca notícias e mostra no discord, com seus respectivos links',
     usage: [
       `${prefix}search - Mostra as manchetes`,
-      `${prefix}search <busca> - Mostra os resultados da busca, caso exita`,
+      `${prefix}search <busca> - Mostra os resultados da busca, caso exista`,
     ]
   },
   {
     name: `${prefix}coinflip`,
-    description: 'Gira uma moeda uma ou mais vezes e mostra qual foi o resultado',
+    description: 'Gira uma moeda uma ou mais vezes e mostra quantas vezes cada uma foi sorteada',
     usage: [
       `${prefix}coinflip - Gira a moeda uma vez`,
       `${prefix}coinflip <vezes> - Gira a moeda x vezes`,
@@ -110,12 +110,12 @@ const commands = [
   },
   {
     name: `${prefix}roll`,
-    description: 'Rola um dado específico uma ou mais vezes e mostra os resultados e o total',
+    description: 'Rola um dado específico uma ou mais vezes, mostra os resultados de cada rodada e o total somado',
     usage: [
       `${prefix}roll <tipo-de-dado> <vezes>`,
-      `${prefix}roll - Rola o d6 uma vez`,
+      `${prefix}roll - Rola o dado d6 uma vez`,
       `${prefix}roll <tipo-de-dado> - Rola o tipo de dado apenas uma vez`,
-      `${prefix}roll <vezes> Rola o d6 x vezes`,
+      `${prefix}roll <vezes> - Rola o dado d6 x vezes`,
     ]
   },
   {
@@ -147,6 +147,8 @@ const commands = [
 function addCommands() {
   const list = document.querySelector('.list-commands')
 
+  
+
   commands.forEach(command => {
     const commandElement = document.createElement('li')
     commandElement.classList.add('command')
@@ -157,9 +159,16 @@ function addCommands() {
     const rightDiv = document.createElement('div')
     const descriptionElement = document.createElement('p')
     descriptionElement.innerText = command.description
-    rightDiv.appendChild(descriptionElement)
 
+    rightDiv.appendChild(descriptionElement)
+    
+    const usageTitle = document.createElement('h3')
+    usageTitle.innerText = 'Modos de usar'
+    
+    
     const usageDiv = document.createElement('div')
+    
+    usageDiv.appendChild(usageTitle)
     command.usage.forEach(mode => {
       const usageMode = document.createElement('p')
       usageMode.innerText = mode
