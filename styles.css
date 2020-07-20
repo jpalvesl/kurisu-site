@@ -83,6 +83,11 @@ section h1 {
   transition: color 200ms ease;
 }
 
+.main-header ion-icon {
+  display: none;
+}
+
+
 .main-header a:hover {
   color: var(--third-color);
 }
@@ -136,8 +141,8 @@ section h1 {
   margin-bottom: 8px;
 }
 
-.play-discord img {
-  width: 100%;
+.playdiscord img {
+  height: 255px;
 }
 
 .playdiscord > div h1 {
@@ -381,4 +386,65 @@ footer a svg:hover {
 .user-icon {
   width: 50px;
   margin-right: 16px;
+}
+
+
+/* Media query */
+@media screen and (max-width: 886px) {
+  .playdiscord {
+    flex-direction: column;
+  }
+
+  .playdiscord > div {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .playdiscord > div h1 {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .playdiscord img {
+    margin: auto;
+    margin-top: 16px;
+  }
+}
+@media screen and (max-width: 840px) {
+  #tipos-de-comandos .content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .main-header > nav{
+    display: none;
+  }
+
+  .main-header ion-icon {
+    display: block;
+    width: 70px;
+    height: 70px;
+  }
+
+  .list-advantages {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  .list-advantages {
+    max-width: 550px;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  footer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .playdiscord > img {
+    display: none;
+  }
 }
