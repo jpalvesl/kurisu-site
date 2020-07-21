@@ -83,11 +83,6 @@ section h1 {
   transition: color 200ms ease;
 }
 
-.main-header ion-icon {
-  display: none;
-}
-
-
 .main-header a:hover {
   color: var(--third-color);
 }
@@ -426,13 +421,7 @@ footer a svg:hover {
 
 @media screen and (max-width: 710px) {
   .main-header > nav{
-    display: none;
-  }
-
-  .main-header ion-icon {
-    display: block;
-    width: 70px;
-    height: 70px;
+    visibility: hidden;
   }
 
   .list-advantages {
