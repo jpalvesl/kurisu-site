@@ -77,7 +77,7 @@ section h1 {
   justify-content: space-between;
 }
 
-.main-header a {
+.main-header > a {
   display: flex;
   align-items: center;
   transition: color 200ms ease;
@@ -416,6 +416,14 @@ footer a svg:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
 @media screen and (max-width: 710px) {
   .main-header > nav{
     display: none;
@@ -438,13 +446,89 @@ footer a svg:hover {
 }
 
 @media screen and (max-width: 710px) {
-  footer {
+  footer .not-hide {
+    display: block;
+    width: 50px;
+  }
+
+  footer .separator {
+    width: 2px;
+    height: 50px;
+  }
+
+  footer img,
+  footer a {
     display: none;
+    margin: 0 8px;
   }
 }
 
-@media screen and (max-width: 450px) {
-  .playdiscord > img {
-    display: none;
+@media screen and (max-width: 610px) {
+  #tipos-de-comandos h1 span {
+    display: block;
+    margin-top: 4px;
   }
+
+  .list-commands .command {
+    flex-direction: column;
+    align-items: initial;
+  }
+
+  .list-commands strong {
+    min-width: initial;
+    max-width: initial;
+    margin-bottom: 8px;
+  }
+
+  .list-commands .command > div {
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .main-header > a > span {
+    font-size: 24px;
+  }
+
+  .main-header .logo {
+    width: 35px;
+  }
+
+  .main-header ion-icon {
+    display: block;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .playdiscord > img {
+    width: 200px;
+    height: 122.5px;
+  }
+
+  #tipos-de-comandos .kurisu-gif {
+    width: 185px;
+  }
+
+  div > .box span {
+    font-size: 16px;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .join-button {
+    width: 200px;
+    height: 50px;
+  }
+
+  .join-button svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .join-button span {
+    font-size: 15px;
+  }
+
 }
