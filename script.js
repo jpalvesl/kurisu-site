@@ -141,6 +141,34 @@ const commands = [
       `${prefix}filter [<filtros>] - Adicione esse comando na descrição de uma imagem que você está enviando para o discord`,
     ]
   },
+  {
+    name: `${prefix}base64`,
+    description: 'Codifica ou decodifica um código base64',
+    usage: [
+      `${prefix}base64 <code/encode> <frase>`,
+    ]
+  },
+  {
+    name: `${prefix}morse`,
+    description: 'Codifica ou decodifica um código morse',
+    usage: [
+      `${prefix}morse <code/encode> <frase>`,
+    ]
+  },
+  {
+    name: `${prefix}make-meme`,
+    description: 'Faz um meme com base no template escolhido e as frases que você indicou',
+    usage: [
+      `${prefix}make-meme <tempalte> [<frase>]`,
+    ]
+  },
+  {
+    name: `${prefix}pokedex`,
+    description: 'Busca informações sobre um pokemon com base no numero na pokedex ou no seu nome',
+    usage: [
+      `${prefix}pokedex <busca>`,
+    ]
+  },
 ]
 
 
